@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+  head
+    title Google log-in app
+  body
+    h1 Log into your Google Account!
+    p This is simply the best app in the world. Now you can log into it using your Google account credentials, too!
+    form(action='http://localhost:3000/auth/google')
+      p
+        | Username: 
+        input(type='text', name='username', required)
+      p
+        | Password: 
+        input(type='password', name='password', required)
+        br
+        input(type='submit', value='Login')
